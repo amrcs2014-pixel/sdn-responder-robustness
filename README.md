@@ -41,6 +41,7 @@ Four defenses are evaluated:
 | `results/A_main.jsonl` | Baseline grid reused for the defense-cost comparison |
 | `results/B_stale.jsonl` | Stale-binding sensitivity |
 | `results/B_hypotheses.json`, `results/B_lmm_summary.txt` | Pre-registered hypotheses and the mixed-effects model |
+| `containernet/` | Real data-plane validation: Containernet + Open vSwitch 2.17 + Ryu 4.34 (two-table app `vm_switch.py`), sampled responder rule sets (genuine and adversarial) and probe results; `src/report_val.py` summarizes them |
 | `results/llm_cache.sqlite` | Every LLM completion used, keyed by prompt (reproduces model outputs without a GPU) |
 | `docs/LAB_NOTEBOOK.md` | Full lab notebook, including the per-incident harm-attribution fix |
 
