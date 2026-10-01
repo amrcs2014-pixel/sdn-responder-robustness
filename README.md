@@ -18,7 +18,7 @@ Four defenses are evaluated:
 - **D3** cost-sensitive gating,
 - **D4** hysteresis with rule budgets.
 
-**Companion repository** (VeriMitigate, real Containernet/Open vSwitch/Ryu validation, synthesizer training): `verimitigate-sdn`.
+**Companion repository** (VeriMitigate, real Containernet/Open vSwitch/Ryu validation, synthesizer training): [https://github.com/amrcs2014-pixel/verimitigate-sdn](https://github.com/amrcs2014-pixel/verimitigate-sdn).
 
 **Ethics.** All adversary traffic is generated inside the emulated testbed by parameterized generators. No exploit code against real controllers or devices is included.
 
@@ -48,7 +48,7 @@ Four defenses are evaluated:
 
 1. **Setup.** `pip install -r requirements.txt` (Python 3.11).
 2. **Data.** Download `FULL_SDN_NIDS.parquet` (LAN-SDN-NIDS, CC BY 4.0, https://doi.org/10.21950/QMAXKP) into `data/`, then run `python src/detector.py`.
-3. **Model.** Download `Qwen/Qwen2.5-1.5B-Instruct` into `models/qwen1.5b/`, and get the adapter `sft.pt` from the companion repository's Release, placing it in `models/adapters/`.
+3. **Model.** Download `Qwen/Qwen2.5-1.5B-Instruct` into `models/qwen1.5b/`, and get the adapter `sft.pt` from the Release of [https://github.com/amrcs2014-pixel/verimitigate-sdn](https://github.com/amrcs2014-pixel/verimitigate-sdn), placing it in `models/adapters/`.
 4. **Experiments.** Run `bash src/run_all.sh`; runs are deterministic, and LLM calls are served from the cache.
 5. **Tables and figures.** `python src/report_B.py`.
 
