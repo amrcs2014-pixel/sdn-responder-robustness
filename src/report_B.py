@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import statsmodels.formula.api as smf
 
 warnings.filterwarnings("ignore")
-OUT = os.path.join(A.ROOT, "paperB_srep")
+OUT = os.path.join(A.ROOT, "paper_outputs"); os.makedirs(OUT, exist_ok=True)
 ORDER = ["portdrop", "template", "vtemplate", "vtemplate_D", "llm", "verimit", "verimit_D"]
 LBL = dict(F.LBL, portdrop="R1 Port-drop", template="R2 Template", vtemplate="R2v V-Template",
            vtemplate_D="R2v+D V-Template+D", llm="R3 LLM", verimit="R4 VeriMitigate", verimit_D="R5 VeriMitigate+D")
